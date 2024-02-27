@@ -131,9 +131,11 @@
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
     <Compile Include="Entities\Contact.cs" />
@@ -143,6 +145,14 @@
     <Compile Include="Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402271901368_mig1.cs" />
+    <Compile Include="Migrations\202402271901368_mig1.designer.cs">
+      <DependentUpon>202402271901368_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402271904461_mig11.cs" />
+    <Compile Include="Migrations\202402271904461_mig11.designer.cs">
+      <DependentUpon>202402271904461_mig11.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,6 +164,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Templates\colorlib-error-404-4\css\style.css" />
+    <Content Include="Templates\colorlib-error-404-4\index.html" />
+    <Content Include="Templates\colorlib-error-404-4\readme.txt" />
     <Content Include="Templates\ruang-admin\404.html" />
     <Content Include="Templates\ruang-admin\alerts.html" />
     <Content Include="Templates\ruang-admin\blank.html" />
@@ -4762,6 +4775,9 @@
     <Content Include="Views\AdminLayout\PartialNavbar.cshtml" />
     <Content Include="Views\AdminLayout\PartialFooter.cshtml" />
     <Content Include="Views\AdminLayout\PartialScript.cshtml" />
+    <Content Include="Views\Category\CreateCategory.cshtml" />
+    <Content Include="Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Views\ErrorPage\Page404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4782,6 +4798,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202402271901368_mig1.resx">
+      <DependentUpon>202402271901368_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402271904461_mig11.resx">
+      <DependentUpon>202402271904461_mig11.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

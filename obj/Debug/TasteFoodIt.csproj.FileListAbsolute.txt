@@ -81,3 +81,6 @@ C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.csproj
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.csproj.CopyComplete
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.dll
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.pdb
+C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig1.resources
+C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.csproj.GenerateResource.cache
+C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig11.resources
