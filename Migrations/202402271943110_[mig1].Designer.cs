@@ -7,13 +7,13 @@ namespace TasteFoodIt.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class mig11 : IMigrationMetadata
+    public sealed partial class mig1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mig11));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mig1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202402271904461_mig11"; }
+            get { return "202402271943110_[mig1]"; }
         }
         
         string IMigrationMetadata.Source

@@ -17,11 +17,13 @@ namespace TasteFoodIt.Controllers
             var values = context.Categories.ToList();
             return View(values);
         }
+
         [HttpGet]
         public ActionResult CreateCategory()
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult CreateCategory(Category category)
         {

@@ -146,13 +146,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202402271901368_mig1.cs" />
-    <Compile Include="Migrations\202402271901368_mig1.designer.cs">
-      <DependentUpon>202402271901368_mig1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202402271904461_mig11.cs" />
-    <Compile Include="Migrations\202402271904461_mig11.designer.cs">
-      <DependentUpon>202402271904461_mig11.cs</DependentUpon>
+    <Compile Include="Migrations\202402271943110_[mig1].cs" />
+    <Compile Include="Migrations\202402271943110_[mig1].designer.cs">
+      <DependentUpon>202402271943110_[mig1].cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -4800,11 +4796,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202402271901368_mig1.resx">
-      <DependentUpon>202402271901368_mig1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202402271904461_mig11.resx">
-      <DependentUpon>202402271904461_mig11.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202402271943110_[mig1].resx">
+      <DependentUpon>202402271943110_[mig1].cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
