@@ -1,17 +1,18 @@
-﻿@model List<TasteFoodIt.Entities.Category>
+﻿@model List<TasteFoodIt.Entities.Product>
 @{
-    ViewBag.Title = "CategoryList";
+    ViewBag.Title = "ProductList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
 
 
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Kategori Listesi</h1>
+        <h1 class="h3 mb-0 text-gray-800">Ürün Listesi</h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="./">Ana Sayfa</a></li>
-            <li class="breadcrumb-item">Kategoriler</li>
-            <li class="breadcrumb-item active" aria-current="page">Kategori İşlemleri</li>
+            <li class="breadcrumb-item">Ürünler</li>
+            <li class="breadcrumb-item active" aria-current="page">Ürün İşlemleri</li>
         </ol>
     </div>
 
@@ -20,15 +21,17 @@
             <!-- Simple Tables -->
             <div class="card">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Kategoriler</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Ürünler</h6>
                 </div>
                 <div class="table-responsive">
                     <table class="table align-items-center table-flush">
                         <thead class="thead-light">
                             <tr>
-                                <th>Kategori Id</th>
-                                <th>Kategori Adı</th>
-                                <th>Kategori Ait Ürünler</th>
+                                <th>Ürün Id</th>
+                                <th>Ürün Adı</th>
+                                <th>Ürün Kategorisi</th>
+                                <th>Fiyat</th>
+                                <th>Durum</th>
                                 <th>Sil</th>
                                 <th>Güncelle</th>
                             </tr>
@@ -36,22 +39,27 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
+                                count++;
                                 <tr>
-                                    <td>@item.CategoryId</td>
-                                    <td>@item.CategoryName</td>
-                                    <td><a href="#" class="btn btn-warning">Kategoriye Ait Ürünler</a>
-                                    <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Kategoriyi Sil</a>
-                                    <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Güncelle</a></td>
+                                    <td>@count</td>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Category.CategoryName</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.IsActive</td>
+                                    <td><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Ürünü Sil</a>
+                                    <td><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></td>
                                 </tr>
                             }
                         </tbody>
                     </table>
-                    <a href="/Category/CreateCategory/" class="btn btn-primary">Yeni Kategori Girişi</a>
+                    <a href="/Product/CreateProduct/" class="btn btn-primary">Yeni Ürün Girişi</a>
                 </div>
                 <div class="card-footer"></div>
             </div>
         </div>
     </div>
     <!--Row-->
-       
+
 </div>
+
+
