@@ -52,13 +52,13 @@ namespace TasteFoodIt.Controllers
         [HttpGet]
         public ActionResult UpdateProduct(int id)
         {
-            List<SelectListItem> values = (from x in context.Categories.ToList()
+            List<SelectListItem> categories = (from x in context.Categories.ToList()
                                            select new SelectListItem
                                            {
                                                Text = x.CategoryName,
                                                Value = x.CategoryId.ToString()
                                            }).ToList();
-            ViewBag.v = values;
+            ViewBag.v = categories;
             var value = context.Products.Find(id);
             return View(value);
         }
@@ -66,11 +66,13 @@ namespace TasteFoodIt.Controllers
         [HttpPost]
         public ActionResult UpdateProduct(Product product)
         {
-            var value = context.Products.Find(product.CategoryId);
+            var value = context.Products.Find(product.ProductId);
             value.ProductName = product.ProductName;
             value.Price = product.Price;
             value.Description = product.Description;
             value.CategoryId = product.CategoryId;
+            value.IsActive = true;
+            value.ImageUrl = product.ImageUrl;
             context.SaveChanges();
             return RedirectToAction("ProductList");
         }
