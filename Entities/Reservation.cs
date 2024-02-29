@@ -8,7 +8,7 @@ namespace TasteFoodIt.Entities
     public class Reservation
     {
         public int ReservationId { get; set; }
-        public string NAme { get; set; }
+        public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public DateTime ReservationDate { get; set; }
