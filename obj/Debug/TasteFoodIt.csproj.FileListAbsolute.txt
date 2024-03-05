@@ -85,3 +85,5 @@ C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrat
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.csproj.GenerateResource.cache
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig2.resources
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig3.resources
+C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig4.resources
+C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig5.resources
