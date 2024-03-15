@@ -201,6 +201,7 @@
     <Content Include="Templates\ruang-admin\img\boy.png" />
     <Content Include="Templates\ruang-admin\img\error.svg" />
     <Content Include="Templates\ruang-admin\img\girl.png" />
+    <Content Include="Templates\ruang-admin\img\hayrunnisa.PNG" />
     <Content Include="Templates\ruang-admin\img\innovation.svg" />
     <Content Include="Templates\ruang-admin\img\logo\logo.png" />
     <Content Include="Templates\ruang-admin\img\logo\logo2.png" />
@@ -4803,6 +4804,7 @@
     <Content Include="Views\Notification\NotificationList.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Profile\UpdatePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

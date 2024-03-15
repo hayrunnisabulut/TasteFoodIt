@@ -24,7 +24,6 @@ namespace TasteFoodIt.Controllers
         }
         public PartialViewResult PartialNavbar()
         {
-            
             var values = context.Notifications.Where(x => x.IsRead == false).ToList();
             ViewBag.notificationIsReadByFalseCount = values.Count();
             return PartialView(values);
