@@ -27,6 +27,7 @@ namespace TasteFoodIt.Controllers
             {
                 FormsAuthentication.SetAuthCookie(values.UserName,true);
                 Session["a"] = values.UserName;
+                ViewBag.v = Session["a"];
                 return RedirectToAction("Index","Profile");
             }
             return View();

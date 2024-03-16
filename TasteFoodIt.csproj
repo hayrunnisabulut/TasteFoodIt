@@ -128,16 +128,19 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\TasteContext.cs" />
+    <Compile Include="Controllers\AdminAboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Entities\Location.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -171,6 +174,10 @@
     <Compile Include="Migrations\202403051740160_[mig5].cs" />
     <Compile Include="Migrations\202403051740160_[mig5].designer.cs">
       <DependentUpon>202403051740160_[mig5].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403161522579_[mig6].cs" />
+    <Compile Include="Migrations\202403161522579_[mig6].designer.cs">
+      <DependentUpon>202403161522579_[mig6].cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -2357,6 +2364,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Dashboard\js\demo\chart-area-demo.js" />
+    <Content Include="Views\Dashboard\js\demo\chart-bar-demo.js" />
+    <Content Include="Views\Dashboard\js\demo\chart-pie-demo.js" />
+    <Content Include="Views\Dashboard\js\ruang-admin.js" />
+    <Content Include="Views\Dashboard\js\ruang-admin.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -4805,6 +4817,11 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Profile\UpdatePassword.cshtml" />
+    <Content Include="Views\AdminAbout\About.cshtml" />
+    <Content Include="Views\AdminAbout\UpdateAbout.cshtml" />
+    <Content Include="Views\Location\LocationList.cshtml" />
+    <Content Include="Views\Location\CreateLocation.cshtml" />
+    <Content Include="Views\Location\UpdateLocation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4841,6 +4858,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403051740160_[mig5].resx">
       <DependentUpon>202403051740160_[mig5].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403161522579_[mig6].resx">
+      <DependentUpon>202403161522579_[mig6].cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

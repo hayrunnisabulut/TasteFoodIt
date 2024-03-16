@@ -87,3 +87,4 @@ C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrat
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig3.resources
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig4.resources
 C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig5.resources
+C:\Users\hayru\source\repos\TasteFoodIt\TasteFoodIt\obj\Debug\TasteFoodIt.Migrations.mig6.resources
