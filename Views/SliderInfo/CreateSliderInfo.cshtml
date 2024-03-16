@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "CreateSliderInfo";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container-fluid" id="container-wrapper">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Slider Ekleme Sayfası</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./">Ana sayfa</a></li>
+            <li class="breadcrumb-item">Slider</li>
+            <li class="breadcrumb-item active" aria-current="page">Slider İşlemleri</li>
+        </ol>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Form Basic -->
+            <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Ekleme Paneli</h6>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="exampleInputCategory">Slider Başlık</label>
+                            <input type="text" class="form-control" name="Title" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Slider Başlığını Giriniz">
+                            <label for="exampleInputCategory">Slider Bilgi</label>
+                            <input type="text" class="form-control" name="Info" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Slider Bilgisini Giriniz">
+                            <label for="exampleInputCategory">Slider Resmi</label>
+                            <input type="text" class="form-control" name="ImageUrl" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Slider Resmini Giriniz">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Slider Ekle</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

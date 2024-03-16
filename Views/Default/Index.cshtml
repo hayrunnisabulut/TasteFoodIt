@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@Html.Action("PartialHead","Default")
+@Html.Action("PartialHead", "Default")
 
 <body>
 
@@ -14,10 +14,12 @@
 
     @Html.Action("PartialNavbar", "Default")
 
-    <!-- END nav -->
+    <section class="hero-wrap">
+        <div class="home-slider owl-carousel js-fullheight">
+            @Html.Action("PartialSlider", "Default")
 
-    @Html.Action("PartialSlider", "Default")
-
+        </div>
+    </section>
 
 
     <section class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt">

@@ -21,5 +21,6 @@ namespace TasteFoodIt.Context
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Location> Locations { get; set; }
+        public DbSet<SliderInfo> SliderInfos { get; set; }
     }
 }

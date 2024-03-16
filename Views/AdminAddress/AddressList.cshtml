@@ -1,0 +1,55 @@
+﻿@model List<TasteFoodIt.Entities.Address>
+
+@{
+    ViewBag.Title = "AddressList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="container-fluid" id="container-wrapper">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Adres Bilgilerim</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./">Ana Sayfa</a></li>
+            <li class="breadcrumb-item">Adresler</li>
+            <li class="breadcrumb-item active" aria-current="page">Adresler İşlemleri</li>
+        </ol>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 mb-4">
+            <!-- Simple Tables -->
+            <div class="card">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Adresler</h6>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Adres Id</th>
+                                <th>Adres Bilgisi</th>
+                                <th>Email</th>
+                                <th>Telefon</th>
+                                <th>Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>@Model[0].AddressId</td>
+                                <td>@Model[0].Description</td>
+                                <td>@Model[0].Email</td>
+                                <td>@Model[0].Phone</td>
+                                <td><a href="/AdminAddress/UpdateAddress/@Model[0].AddressId" class="btn btn-success">Güncelle</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!--Row-->
+
+</div>
+

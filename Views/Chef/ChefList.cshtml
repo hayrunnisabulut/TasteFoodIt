@@ -1,0 +1,63 @@
+﻿@model List<TasteFoodIt.Entities.Chef>
+
+@{
+    ViewBag.Title = "ChefList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container-fluid" id="container-wrapper">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Şef Listesi</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./">Ana Sayfa</a></li>
+            <li class="breadcrumb-item">Şefler</li>
+            <li class="breadcrumb-item active" aria-current="page">Şef İşlemleri</li>
+        </ol>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 mb-4">
+            <!-- Simple Tables -->
+            <div class="card">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Kategoriler</h6>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Şef Id</th>
+                                <th>Şef Adı</th>
+                                <th>Açıklama</th>
+                                <th>Resim</th>
+                                <th>Başlık</th>
+                                <th>Sil</th>
+                                <th>Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.ChefId</td>
+                                    <td>@item.NameSurname</td>
+                                    <td>@item.Description</td>
+                                    <td>@item.ImageUrl</td>
+                                    <td>@item.Title</td>
+                                    <td><a href="/Chef/DeleteChef/@item.ChefId" class="btn btn-danger">Şefi Sil</a>
+                                    <td><a href="/Chef/UpdateChef/@item.ChefId" class="btn btn-success">Güncelle</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <a href="/Chef/CreateChef/" class="btn btn-primary">Yeni Şef Girişi</a>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!--Row-->
+
+</div>
+<h2>ChefList</h2>
+

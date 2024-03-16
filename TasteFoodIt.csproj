@@ -129,8 +129,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\TasteContext.cs" />
     <Compile Include="Controllers\AdminAboutController.cs" />
+    <Compile Include="Controllers\AdminAddressController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ChefController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
@@ -140,6 +142,7 @@
     <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Controllers\SliderInfoController.cs" />
     <Compile Include="Entities\Location.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
@@ -151,6 +154,7 @@
     <Compile Include="Entities\OpenDayHour.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
+    <Compile Include="Entities\SliderInfo.cs" />
     <Compile Include="Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -178,6 +182,14 @@
     <Compile Include="Migrations\202403161522579_[mig6].cs" />
     <Compile Include="Migrations\202403161522579_[mig6].designer.cs">
       <DependentUpon>202403161522579_[mig6].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403161852248_[mig7].cs" />
+    <Compile Include="Migrations\202403161852248_[mig7].designer.cs">
+      <DependentUpon>202403161852248_[mig7].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403161906318_[mig8].cs" />
+    <Compile Include="Migrations\202403161906318_[mig8].designer.cs">
+      <DependentUpon>202403161906318_[mig8].cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -4822,6 +4834,14 @@
     <Content Include="Views\Location\LocationList.cshtml" />
     <Content Include="Views\Location\CreateLocation.cshtml" />
     <Content Include="Views\Location\UpdateLocation.cshtml" />
+    <Content Include="Views\SliderInfo\SliderInfoList.cshtml" />
+    <Content Include="Views\SliderInfo\CreateSliderInfo.cshtml" />
+    <Content Include="Views\SliderInfo\UpdateSliderInfo.cshtml" />
+    <Content Include="Views\AdminAddress\AddressList.cshtml" />
+    <Content Include="Views\AdminAddress\UpdateAddress.cshtml" />
+    <Content Include="Views\Chef\ChefList.cshtml" />
+    <Content Include="Views\Chef\CreateChef.cshtml" />
+    <Content Include="Views\Chef\UpdateChef.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4829,6 +4849,7 @@
     <Folder Include="Templates\ruang-admin\.git\objects\info\" />
     <Folder Include="Templates\ruang-admin\.git\objects\pack\" />
     <Folder Include="Templates\ruang-admin\.git\refs\tags\" />
+    <Folder Include="Views\AdminAdress\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -4861,6 +4882,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403161522579_[mig6].resx">
       <DependentUpon>202403161522579_[mig6].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403161852248_[mig7].resx">
+      <DependentUpon>202403161852248_[mig7].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403161906318_[mig8].resx">
+      <DependentUpon>202403161906318_[mig8].cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
