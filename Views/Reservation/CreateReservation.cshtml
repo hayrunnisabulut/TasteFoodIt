@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "CreateReservation";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="container-fluid" id="container-wrapper">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Kategori Ekleme Sayfası</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./">Ana sayfa</a></li>
+            <li class="breadcrumb-item">Kategoriler</li>
+            <li class="breadcrumb-item active" aria-current="page">Kategori İşlemleri</li>
+        </ol>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Form Basic -->
+            <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Ekleme Paneli</h6>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="exampleInputCategory">Ad</label>
+                            <input type="text" class="form-control" name="Name" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Adı Giriniz">
+                            <label for="exampleInputCategory">Email</label>
+                            <input type="text" class="form-control" name="Email" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Email Giriniz">
+                            <label for="exampleInputCategory">Telefon</label>
+                            <input type="text" class="form-control" name="Phone" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Telefon Giriniz">
+                            <label for="exampleInputCategory">Rezervasyon Tarihi</label>
+                            <input type="text" class="form-control" name="ReservationDate" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Tarihi Giriniz">
+                            <label for="exampleInputCategory">Saat</label>
+                            <input type="text" class="form-control" name="Time" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Saati Giriniz">
+                            <label for="exampleInputCategory">Kişi Sayısı</label>
+                            <input type="text" class="form-control" name="GuestCount" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Kişi Sayısını Giriniz">
+                            <label for="exampleInputCategory">Rezervasyon Durumu</label>
+                            <input type="text" class="form-control" name="ReservationStatus" id="exampleInputCategory" aria-describedby="emailHelp"
+                                   placeholder="Rezervasyon Durumunu Giriniz">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Rezervasyon Ekle</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

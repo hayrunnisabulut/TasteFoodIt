@@ -141,8 +141,10 @@
     <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\OpenDayHoursController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\SliderInfoController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\Location.cs" />
@@ -4853,6 +4855,12 @@
     <Content Include="Views\Testimonial\Testimonial.cshtml" />
     <Content Include="Views\Testimonial\CreateTestimonial.cshtml" />
     <Content Include="Views\Testimonial\UpdateTestimonial.cshtml" />
+    <Content Include="Views\OpenDayHours\OpenDayHoursList.cshtml" />
+    <Content Include="Views\OpenDayHours\CreateOpenDayHours.cshtml" />
+    <Content Include="Views\OpenDayHours\UpdateOpenDayHour.cshtml" />
+    <Content Include="Views\Reservation\ReservationList.cshtml" />
+    <Content Include="Views\Reservation\CreateReservation.cshtml" />
+    <Content Include="Views\Reservation\UpdateReservation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
