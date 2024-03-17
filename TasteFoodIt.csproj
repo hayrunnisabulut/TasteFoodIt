@@ -133,6 +133,7 @@
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ChefController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\SliderInfoController.cs" />
+    <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\Location.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
@@ -190,6 +192,10 @@
     <Compile Include="Migrations\202403161906318_[mig8].cs" />
     <Compile Include="Migrations\202403161906318_[mig8].designer.cs">
       <DependentUpon>202403161906318_[mig8].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403171512301_[mig9].cs" />
+    <Compile Include="Migrations\202403171512301_[mig9].designer.cs">
+      <DependentUpon>202403171512301_[mig9].cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -4842,6 +4848,11 @@
     <Content Include="Views\Chef\ChefList.cshtml" />
     <Content Include="Views\Chef\CreateChef.cshtml" />
     <Content Include="Views\Chef\UpdateChef.cshtml" />
+    <Content Include="Views\Contact\ContactList.cshtml" />
+    <Content Include="Views\Contact\OpenMessage.cshtml" />
+    <Content Include="Views\Testimonial\Testimonial.cshtml" />
+    <Content Include="Views\Testimonial\CreateTestimonial.cshtml" />
+    <Content Include="Views\Testimonial\UpdateTestimonial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4888,6 +4899,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403161906318_[mig8].resx">
       <DependentUpon>202403161906318_[mig8].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403171512301_[mig9].resx">
+      <DependentUpon>202403171512301_[mig9].cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
