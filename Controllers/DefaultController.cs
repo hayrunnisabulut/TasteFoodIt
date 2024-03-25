@@ -14,6 +14,7 @@ namespace TasteFoodIt.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.secret = context.Abouts.Select(x => x.Description).FirstOrDefault();
             return View();
         }
         public PartialViewResult PartialHead()
@@ -59,7 +60,8 @@ namespace TasteFoodIt.Controllers
         }
         public PartialViewResult PartialChef()
         {
-            return PartialView();
+            var values = context.Chefs.ToList();
+            return PartialView(values);
         }
 
         public PartialViewResult PartialReservation()
