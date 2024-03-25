@@ -62,5 +62,19 @@ namespace TasteFoodIt.Controllers
             return PartialView();
         }
 
+        public PartialViewResult PartialReservation()
+        {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public ActionResult PartialReservation(Reservation reservation)
+        {
+            reservation.ReservationStatus = "Beklemede";
+            context.Reservations.Add(reservation);
+            ViewBag.v = "true";
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

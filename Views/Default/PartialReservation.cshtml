@@ -1,0 +1,69 @@
+﻿﻿@model TasteFoodIt.Entities.Reservation
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name" name="Name">
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" name="Email">
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone" name="Phone">
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <div class="input-wrap">
+                <div class="icon"><span class="fa fa-calendar"></span></div>
+                <input type="text" class="form-control book_date" placeholder="Check-In" name="ReservationDate">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <div class="input-wrap">
+                <div class="icon"><span class="fa fa-clock-o"></span></div>
+                <input type="text" class="form-control book_time" placeholder="Time" name="Time">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <div class="form-field">
+                <div class="select-wrap">
+                    <div class="icon"><span class="fa fa-chevron-circle-down"></span></div>
+                    <select name="GuestCount" id="GuestCount" class="form-control">
+                        <option value="0">Guest</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    @if (ViewBag.v == "true")
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">Kapat</span>
+            </button>
+            <h6><i>!</i><b> Bilgi</b></h6>
+            Rezervasyon Talebiniz alınmıştır
+        </div>
+    }
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="submit"  id="btnReservationNow" value="Rezervasyon Yap" class="btn btn-white py-3 px-4">
+        </div>
+    </div>
+</div>

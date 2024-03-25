@@ -4861,6 +4861,7 @@
     <Content Include="Views\Reservation\ReservationList.cshtml" />
     <Content Include="Views\Reservation\CreateReservation.cshtml" />
     <Content Include="Views\Reservation\UpdateReservation.cshtml" />
+    <Content Include="Views\Default\PartialReservation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

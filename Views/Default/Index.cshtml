@@ -26,63 +26,11 @@
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-sm-4 p-4 p-md-5 d-flex align-items-center justify-content-center bg-primary">
-                    <form action="#" class="appointment-form">
-                        <h3 class="mb-3">Book your Table</h3>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="name" class="form-control" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="input-wrap">
-                                        <div class="icon"><span class="fa fa-calendar"></span></div>
-                                        <input type="text" class="form-control book_date" placeholder="Check-In">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="input-wrap">
-                                        <div class="icon"><span class="fa fa-clock-o"></span></div>
-                                        <input type="text" class="form-control book_time" placeholder="Time">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="form-field">
-                                        <div class="select-wrap">
-                                            <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">Guest</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                                <option value="">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="submit" href="Reservation/CreateReservation/" value="Book Your Table Now" class="btn btn-white py-3 px-4">
-                                </div>
-                            </div>
-                        </div>
+                    <form action="PartialReservation"  method="post" class="appointment-form">
+                        <h3 class="mb-3">Rezervasyon Yap</h3>
+
+                        @Html.Action("PartialReservation", "Default")
+
                     </form>
                 </div>
                 @Html.Action("PartialAbout", "Default")
@@ -111,8 +59,8 @@
         <div class="container">
             <div class="row d-flex">
                 <div class="col-md-6 d-flex">
-                    <div class="img img-2 w-100 mr-md-2" style="background-image: url(images/bg_6.jpg);"></div>
-                    <div class="img img-2 w-100 ml-md-2" style="background-image: url(images/bg_4.jpg);"></div>
+                    <div class="img img-2 w-100 mr-md-2" style="background-image: url(/Templates/tasteit-master/images/bg_6.jpg);"></div>
+                    <div class="img img-2 w-100 ml-md-2" style="background-image: url(/Templates/tasteit-master/images/bg_4.jpg);"></div>
                 </div>
                 <div class="col-md-6 ftco-animate makereservation p-4 p-md-5">
                     <div class="heading-section ftco-animate mb-5">
@@ -139,7 +87,7 @@
             <div class="row">
                 <div class="col-md-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('/Templates/tasteit-master/images/image_1.jpg');">
                         </a>
                         <div class="text px-4 pt-3 pb-4">
                             <div class="meta">
@@ -156,7 +104,7 @@
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('/Templates/tasteit-master/images/image_2.jpg');">
                         </a>
                         <div class="text px-4 pt-3 pb-4">
                             <div class="meta">
@@ -173,7 +121,7 @@
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('/Templates/tasteit-master/images/image_3.jpg');">
                         </a>
                         <div class="text px-4 pt-3 pb-4">
                             <div class="meta">
@@ -235,19 +183,19 @@
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Instagram</h2>
                         <div class="thumb d-sm-flex">
-                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-1.jpg);">
+                            <a href="#" class="thumb-menu img" style="background-image: url(/Templates/tasteit-master/images/insta-1.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-2.jpg);">
+                            <a href="#" class="thumb-menu img" style="background-image: url(/Templates/tasteit-master/images/insta-2.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-3.jpg);">
+                            <a href="#" class="thumb-menu img" style="background-image: url(/Templates/tasteit-master/images/insta-3.jpg);">
                             </a>
                         </div>
                         <div class="thumb d-flex">
-                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-4.jpg);">
+                            <a href="#" class="thumb-menu img" style="background-image: url(/Templates/tasteit-master/images/insta-4.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-5.jpg);">
+                            <a href="#" class="thumb-menu img" style="background-image: url(/Templates/tasteit-master/images/insta-5.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-6.jpg);">
+                            <a href="#" class="thumb-menu img" style="background-image: url(/Templates/tasteit-master/images/insta-6.jpg);">
                             </a>
                         </div>
                     </div>
