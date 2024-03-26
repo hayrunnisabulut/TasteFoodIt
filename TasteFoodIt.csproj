@@ -4862,6 +4862,15 @@
     <Content Include="Views\Reservation\CreateReservation.cshtml" />
     <Content Include="Views\Reservation\UpdateReservation.cshtml" />
     <Content Include="Views\Default\PartialReservation.cshtml" />
+    <Content Include="Views\Default\PartialOpenDayHour.cshtml" />
+    <Content Include="Views\Default\About.cshtml" />
+    <Content Include="Views\Default\AboutPartial.cshtml" />
+    <Content Include="Views\Default\PartialInstagram.cshtml" />
+    <Content Include="Views\Default\PartialNewSletter.cshtml" />
+    <Content Include="Views\Default\Chef.cshtml" />
+    <Content Include="Views\Default\Menu.cshtml" />
+    <Content Include="Views\Default\Reservation.cshtml" />
+    <Content Include="Views\Default\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

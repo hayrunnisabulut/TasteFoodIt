@@ -78,5 +78,71 @@ namespace TasteFoodIt.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public PartialViewResult PartialOpenDayHour()
+        {
+            var values = context.OpenDayHours.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialInstagram()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialNewSletter()
+        {
+            return PartialView();
+        }
+
+        public ActionResult About()
+        {
+            ViewBag.secret = context.Abouts.Select(x => x.Description).FirstOrDefault();
+            ViewBag.productcount = context.Products.Count();
+            ViewBag.chefcount = context.Chefs.Count();
+            ViewBag.reservationcount = context.Reservations.Count();
+            ViewBag.contactcount = context.Contacts.Count();
+            return View();
+        }
+
+        public PartialViewResult AboutPartial()
+        {
+            return PartialView();
+        }
+
+        public ActionResult Chef()
+        {
+            ViewBag.secret = context.Abouts.Select(x => x.Description).FirstOrDefault();
+            return View();
+        }
+
+        public ActionResult Menu()
+        {
+            ViewBag.secret = context.Abouts.Select(x => x.Description).FirstOrDefault();
+            return View();
+        }
+
+        public ActionResult Reservation()
+        {
+            ViewBag.secret = context.Abouts.Select(x => x.Description).FirstOrDefault();
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.secret = context.Abouts.Select(x => x.Description).FirstOrDefault();
+            return View();
+        }
+        public PartialViewResult PartialContact()
+        {
+            return PartialView();
+        }
+        [HttpPost]
+        public ActionResult PartialContact(Contact contact)
+        {
+            contact.ReservationStatus = "Beklemede";
+            context.Reservations.Add(contact);
+            ViewBag.v = "true";
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

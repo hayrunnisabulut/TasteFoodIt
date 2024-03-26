@@ -1,0 +1,138 @@
+﻿
+
+@{ Layout = null; }
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Default")
+
+<body>
+
+
+    @Html.Action("PartialNavbarInfo", "Default")
+
+    @Html.Action("PartialNavbar", "Default")
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/Templates/tasteit-master/images/bg_5.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate text-center mb-5">
+                    <h1 class="mb-2 bread">About</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="/Default/Index">Ana Sayfa <i class="fa fa-chevron-right"></i></a></span> <span>Hakkımızda <i class="fa fa-chevron-right"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 d-flex">
+                    <div class="img img-2 w-100 mr-md-2" style="background-image: url(/Templates/tasteit-master/images/bg_6.jpg);"></div>
+                    <div class="img img-2 w-100 ml-md-2" style="background-image: url(/Templates/tasteit-master/images/bg_4.jpg);"></div>
+                </div>
+                <div class="col-md-6 ftco-animate makereservation p-4 p-md-5">
+                    <div class="heading-section ftco-animate mb-5">
+                        <span class="subheading">Sırrımız</span>
+                        <h2 class="mb-4">Müthiş İçerikler</h2>
+                        <p>
+                            @ViewBag.secret
+                        </p>
+                        <p><a href="#" class="btn btn-primary">Daha Fazla</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/Templates/tasteit-master/images/bg_4.jpg);" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row d-md-flex align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row d-md-flex align-items-center">
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="@ViewBag.productcount">0</strong>
+                                    <span>Lezzetli Ürünlerimiz</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="@ViewBag.chefcount">0</strong>
+                                    <span>Şeflerimiz</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="@ViewBag.reservationcount">0</strong>
+                                    <span>Rezervasyonlarımız</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="@ViewBag.contactcount">0</strong>
+                                    <span>Müşterilerimiz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-intro bg-primary">
+        <div class="container py-5">
+            <div class="row py-2">
+                <div class="col-md-12 text-center">
+                    <h2>Lezzetli &amp; Besleyici Yemekler</h2>
+                    <a href="/Default/Reservation" class="btn btn-white btn-outline-white">Şimdi Rezervasyon yap</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @Html.Action("PartialTestimonial", "Default")
+    <footer class="ftco-footer ftco-no-pb ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                @Html.Action("AboutPartial", "Default")
+                @Html.Action("PartialOpenDayHour", "Default")
+                @Html.Action("PartialInstagram", "Default")
+                @Html.Action("PartialNewSletter", "Default")
+            </div>
+        </div>
+        <div class="container-fluid px-0 bg-primary py-3">
+            <div class="row no-gutters">
+                <div class="col-md-12 text-center">
+
+                    <p class="mb-0">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+    @Html.Action("PartialScript", "Default")
+</body>
+</html>
