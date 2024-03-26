@@ -4871,6 +4871,8 @@
     <Content Include="Views\Default\Menu.cshtml" />
     <Content Include="Views\Default\Reservation.cshtml" />
     <Content Include="Views\Default\Contact.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialAddress.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

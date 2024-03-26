@@ -128,6 +128,8 @@ namespace TasteFoodIt.Controllers
 
         public ActionResult Contact()
         {
+            ViewBag.email = context.Addresses.Select(x => x.Email).FirstOrDefault();
+            ViewBag.phone = context.Addresses.Select(x => x.Phone).FirstOrDefault();
             ViewBag.secret = context.Abouts.Select(x => x.Description).FirstOrDefault();
             return View();
         }
@@ -138,11 +140,18 @@ namespace TasteFoodIt.Controllers
         [HttpPost]
         public ActionResult PartialContact(Contact contact)
         {
-            contact.ReservationStatus = "Beklemede";
-            context.Reservations.Add(contact);
+            contact.IsRead = false;
+            contact.SendDate = DateTime.Now;
+            context.Contacts.Add(contact);
             ViewBag.v = "true";
             context.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public PartialViewResult PartialAddress()
+        {
+            var values = context.Locations.ToList();
+            return PartialView(values);
         }
     }
 }

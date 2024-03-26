@@ -1,0 +1,41 @@
+﻿﻿@model TasteFoodIt.Entities.Contact
+
+<section class="ftco-section ftco-no-pt contact-section">
+    <div class="container">
+        <div class="row d-flex align-items-stretch no-gutters">
+            <div class="col-md-6 p-5 order-md-last">
+                <h2 class="h4 mb-5 font-weight-bold">Contact Us</h2>
+                <form action="PartialContact" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Adınız" name="NameSurname">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email Adresiniz" name="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Konu" name="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="" cols="30" rows="7" class="form-control" placeholder="Mesajınız" name="Message"></textarea>
+                    </div>
+                    @if (ViewBag.v == "true")
+                    {
+                        <div class="alert alert-success" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">Kapat</span>
+                            </button>
+                            <h6><i>!</i><b> Bilgi</b></h6>
+                            Rezervasyon Talebiniz alınmıştır
+                        </div>
+                    }
+                    <div class="form-group">
+                        <input type="submit" value="Mesajı Gönder" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
