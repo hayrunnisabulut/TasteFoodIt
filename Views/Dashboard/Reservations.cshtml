@@ -1,0 +1,55 @@
+﻿@model List<TasteFoodIt.Entities.Reservation>
+<div class="col-xl-12 col-lg-7 mb-4">
+    <div class="card">
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Rezervasyonlar</h6>
+            <a class="m-0 float-right btn btn-danger btn-sm" href="/Reservation/ReservationList">
+                Daha fazla <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Rezervasyon Id</th>
+                        <th>Ad</th>
+                        <th>Rezervasyon Tarihi</th>
+                        <th>Saat</th>
+                        <th>Kişi Sayısı</th>
+                        <th>Rezervasyon Durumu</th>
+                        <th>Detay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{var renk = ""; }
+                    @foreach (var item in Model)
+                    {
+                        if (item.ReservationStatus == "Onaylandı")
+                        {
+                            renk = "badge badge-success";
+                        }
+                        else if(item.ReservationStatus == "Beklemede")
+                        {
+                            renk = "badge badge-warning";
+                        }
+                        else
+                        {
+                            renk = "badge badge-danger";
+                        }
+                        <tr>
+                            <td>@item.ReservationId</td>
+                            <td>@item.Name</td>
+                            <td>@item.ReservationDate.ToString("dd/MM/yyyy")</td>
+                            <td>@item.Time</td>
+                            <td>@item.GuestCount</td>
+                            <td><span class="@renk">@item.ReservationStatus</span></td>
+                            <td><a href="/Reservation/ReservationList/" class="btn btn-sm btn-primary">Durumunu Güncelle</a></td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer"></div>
+    </div>
+</div>

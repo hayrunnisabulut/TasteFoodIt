@@ -1,0 +1,41 @@
+﻿@model List<TasteFoodIt.Entities.Contact>
+
+<div class="col-xl-4 col-lg-5 ">
+    <div class="card">
+        <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-light">Müşterilerden Mesajlar</h6>
+            <div class="dropdown no-arrow">
+                <a class="dropdown-toggle btn btn-primary btn-sm" href="#" role="button" id="dropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ay <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                     aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Select Periode</div>
+                    <a class="dropdown-item" href="#">Bugün</a>
+                    <a class="dropdown-item" href="#">Hafta</a>
+                    <a class="dropdown-item active" href="#">Ay</a>
+                    <a class="dropdown-item" href="#">Yıl</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            @foreach (var item in Model)
+            {
+                <div class="customer-message align-items-center">
+                    <a class="font-weight-bold" href="/Contact/ContactList">
+                        <div class="text-truncate message-title">
+                            @item.Message
+                        </div>
+                        <div class="small text-gray-500 message-time font-weight-bold">@item.NameSurname · @item.SendDate.ToString("dd/MM/yyyy")</div>
+                    </a>
+                </div>
+            }
+            <div class="card-footer text-center">
+                <a class="m-0 small text-primary card-link" href="/Contact/ContactList">
+                    Daha Fazla <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

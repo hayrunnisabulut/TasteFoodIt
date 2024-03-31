@@ -4873,6 +4873,9 @@
     <Content Include="Views\Default\Contact.cshtml" />
     <Content Include="Views\Default\PartialContact.cshtml" />
     <Content Include="Views\Default\PartialAddress.cshtml" />
+    <Content Include="Views\AdminLayout\PartialNavbarMessage.cshtml" />
+    <Content Include="Views\Dashboard\Reservations.cshtml" />
+    <Content Include="Views\Dashboard\Messages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4881,6 +4884,7 @@
     <Folder Include="Templates\ruang-admin\.git\objects\pack\" />
     <Folder Include="Templates\ruang-admin\.git\refs\tags\" />
     <Folder Include="Views\AdminAdress\" />
+    <Folder Include="Views\Message\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

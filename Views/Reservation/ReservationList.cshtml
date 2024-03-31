@@ -42,17 +42,31 @@
                             </tr>
                         </thead>
                         <tbody>
+
+                            @{var renk = ""; }
                             @foreach (var item in Model)
                             {
+                                if (item.ReservationStatus == "Onaylandı")
+                                {
+                                    renk = "badge badge-success";
+                                }
+                                else if (item.ReservationStatus == "Beklemede")
+                                {
+                                    renk = "badge badge-warning";
+                                }
+                                else
+                                {
+                                    renk = "badge badge-danger";
+                                }
                                 <tr>
                                     <td>@item.ReservationId</td>
                                     <td>@item.Name</td>
                                     <td>@item.Email</td>
                                     <td>@item.Phone</td>
-                                    <td>@item.ReservationDate</td>
+                                    <td>@item.ReservationDate.ToString("dd/MM/yyyy")</td>
                                     <td>@item.Time</td>
                                     <td>@item.GuestCount</td>
-                                    <td>@item.ReservationStatus</td>
+                                    <td><span class="@renk">@item.ReservationStatus</span></td>
                                     <td><a href="/Reservation/DeleteReservation/@item.ReservationId" class="btn btn-danger">Sil</a>
                                     <td><a href="/Reservation/ApproveReservation/@item.ReservationId" class="btn btn-success">Onayla</a>
                                     <td><a href="/Reservation/WaitReservation/@item.ReservationId" class="btn btn-warning">Beklet</a>

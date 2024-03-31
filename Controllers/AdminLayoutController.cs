@@ -10,6 +10,8 @@ namespace TasteFoodIt.Controllers
     public class AdminLayoutController : Controller
     {
         TasteContext context = new TasteContext();
+
+        [Authorize]
         public ActionResult Index()
         {
             return View();
@@ -26,6 +28,12 @@ namespace TasteFoodIt.Controllers
         {
             var values = context.Notifications.Where(x => x.IsRead == false).ToList();
             ViewBag.notificationIsReadByFalseCount = values.Count();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialNavbarMessage()
+        {
+            var values = context.Contacts.Where(x => x.IsRead == false).ToList();
+            ViewBag.messageIsReadFalseCount = values.Count();
             return PartialView(values);
         }
         public PartialViewResult PartialFooter()
