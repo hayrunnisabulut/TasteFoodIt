@@ -32,5 +32,19 @@ namespace TasteFoodIt.Controllers
         {
             return RedirectToAction("ContactList");
         }
+        public ActionResult UpdateContactIsRead(int id)
+        {
+            var value = context.Contacts.Find(id);
+            if (value.IsRead == true)
+            {
+                value.IsRead = false;
+            }
+            else
+            {
+                value.IsRead = true;
+            }
+            context.SaveChanges();
+            return RedirectToAction("ContactList");
+        }
     }
 }

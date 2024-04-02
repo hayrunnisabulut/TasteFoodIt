@@ -40,23 +40,27 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                                var okundumu = "Okunmadı";
-                                if (item.IsRead == true)
-                                {
-                                    okundumu = "Okundu";
-                                }
-                            <tr>
-                                <td>@item.ContactId</td>
-                                <td>@item.NameSurname</td>
-                                <td>@item.Email</td>
-                                <td>@item.Subject</td>
-                                <td>@item.Message</td>
-                                <td>@item.SendDate</td>
-                                <th>
-                                    @okundumu
-                                </th>
-                                <th><a href="/Contact/OpenMessage/@item.ContactId" class="btn btn-success">Mesajı Aç</a></th>
-                            </tr>
+                                <tr>
+                                    <td>@item.ContactId</td>
+                                    <td>@item.NameSurname</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Subject</td>
+                                    <td>@item.Message</td>
+                                    <td>@item.SendDate</td>
+                                    @if (item.IsRead == true)
+                                    {
+                                        <td>
+                                            <a href="/Contact/UpdateContactIsRead/@item.ContactId" class="btn btn-warning">Okunmadı Olarak İşaretle</a>
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td>
+                                            <a href="/Contact/UpdateContactIsRead/@item.ContactId" class="btn btn-dark">Okundu Olarak İşaretle</a>
+                                        </td>
+                                    }
+                                    <th><a href="/Contact/OpenMessage/@item.ContactId" class="btn btn-success">Mesajı Aç</a></th>
+                                </tr>
                             }
                         </tbody>
                     </table>
