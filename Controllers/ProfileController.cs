@@ -14,7 +14,9 @@ namespace TasteFoodIt.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.v = Session["a"];
+
+            ViewBag.username = Session["username"];
+            ViewBag.userid = Session["userid"];
             return View();
         }
 
