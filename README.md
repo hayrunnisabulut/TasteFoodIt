@@ -15,6 +15,7 @@ Admin panelinden yetkili kullanıcılar rezervasyonları yönetebilir mesajları
 - MSSql
 - ORM
 - Authorization
+- Authentication
 
 ## Database Diagram 📊
 
