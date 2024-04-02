@@ -208,6 +208,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Templates\2.png" />
     <Content Include="Templates\colorlib-error-404-4\css\style.css" />
     <Content Include="Templates\colorlib-error-404-4\index.html" />
     <Content Include="Templates\colorlib-error-404-4\readme.txt" />
