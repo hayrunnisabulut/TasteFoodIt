@@ -53,6 +53,14 @@ namespace TasteFoodIt.Controllers
             return RedirectToAction("NotificationList", "Notification");
         }
 
+        public ActionResult NotificationStatusChangeToTrue(int id)
+        {
+            var value = context.Notifications.Find(id);
+            value.IsRead = true;
+            context.SaveChanges();
+            return RedirectToAction("NotificationList", "Notification");
+        }
+
 
         public ActionResult Logout()
         {
