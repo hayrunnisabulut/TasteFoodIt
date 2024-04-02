@@ -31,10 +31,15 @@ Admin panelinden yetkili kullanıcılar rezervasyonları yönetebilir mesajları
 
 Kullanıcı Arayüzü Resimler:
 ![localhost_44396_Default_Index (1)](https://github.com/hayrunnisabulut/TasteFoodIt/assets/95770965/5b3bd8dd-1c5a-4287-b3fb-d24380f48999)
+
 ![localhost_44396_Default_About (1)](https://github.com/hayrunnisabulut/TasteFoodIt/assets/95770965/b1bada3d-a2ae-492a-9aa6-06739fc7fdcc)
+
 ![localhost_44396_Default_Chef](https://github.com/hayrunnisabulut/TasteFoodIt/assets/95770965/71b7ddbd-9746-435c-948f-3194264b5835)
+
 ![localhost_44396_Default_Menu](https://github.com/hayrunnisabulut/TasteFoodIt/assets/95770965/3e655652-a755-4c10-b217-c96bd523bc8d)
+
 ![localhost_44396_Default_Reservation](https://github.com/hayrunnisabulut/TasteFoodIt/assets/95770965/95b04c09-2eda-4992-b2ea-eac5d3b66f4c)
+
 ![localhost_44396_Default_Contact](https://github.com/hayrunnisabulut/TasteFoodIt/assets/95770965/70da6dbf-ff50-4a95-ad30-0220c4b6be4b)
 
 
